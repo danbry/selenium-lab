@@ -13,7 +13,7 @@ If IntelliJ is installed you can do the following:
  1. Clone the git repository: `git clone https://github.com/danbry/selenium-lab.git`
  2. Download all the dependencies (will be automatically done by IntelliJ)
  3. Update the test configuration, described below.
- 3. Run the tests
+ 4. Run the tests
  
  
 
