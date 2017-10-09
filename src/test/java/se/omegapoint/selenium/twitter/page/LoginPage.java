@@ -16,7 +16,7 @@ public class LoginPage {
     // Elements on page
     private final By signinEmailInput = By.cssSelector("div.username.field input#signin-email");
     private final By signinPasswordInput = By.cssSelector("input#signin-password.text-input.flex-table-input");
-    private final By loginButton = By.cssSelector("button.submit.btn.primary-btn.flex-table-btn");
+    private final By loginButton = By.cssSelector("button.submit.flex-table-btn");
     private static final String INCORRECT_LOGIN_TITLE = "Login on Twitter";
 
     public LoginPage(WebDriver driver) {

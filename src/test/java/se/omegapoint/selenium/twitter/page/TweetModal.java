@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class TweetModal {
     private final WebDriver driver;
 
-    private final By tweetButton = By.cssSelector(".modal-tweet-form-container .btn.primary-btn.tweet-action");
+    private final By tweetButton = By.cssSelector(".modal-tweet-form-container .tweet-button");
     private final By tweetTextBox = By.id("tweet-box-global");
 
 
