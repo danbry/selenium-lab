@@ -14,9 +14,9 @@ public class LoginPage {
     private final WebDriver driver;
 
     // Elements on page
-    private final By signinEmailInput = By.cssSelector("div.username.field input#signin-email");
-    private final By signinPasswordInput = By.cssSelector("input#signin-password.text-input.flex-table-input");
-    private final By loginButton = By.cssSelector("button.submit.flex-table-btn");
+    private final By signinEmailInput = By.cssSelector("input.js-username-field.email-input");
+    private final By signinPasswordInput = By.cssSelector("input.js-password-field");
+    private final By loginButton = By.cssSelector("form.js-signin button.submit");
     private static final String INCORRECT_LOGIN_TITLE = "Login on Twitter";
 
     public LoginPage(WebDriver driver) {
@@ -24,7 +24,7 @@ public class LoginPage {
     }
 
     public void goToPage() {
-        driver.get(baseUrl + "/");
+        driver.get(baseUrl + "/login");
     }
 
     public boolean isOnIncorrectLoginPage() {

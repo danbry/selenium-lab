@@ -11,7 +11,7 @@ public class ProfilePage {
 
     private final WebDriver driver;
     private final By numberOfTweets = By.cssSelector(".ProfileNav " +
-            ".ProfileNav-item--tweets .ProfileNav-value");
+            "a[data-nav=tweets] .ProfileNav-value");
 
     public ProfilePage(WebDriver driver) {
         this.driver = driver;

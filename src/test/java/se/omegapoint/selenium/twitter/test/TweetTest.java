@@ -85,7 +85,7 @@ public class TweetTest extends BaseTest {
       assertTrue("Expect to have tweet modal", tweetModal.isOnTweetModal());
 
       //Enter tweet text with too many characters and click button
-      tweetModal.enterTweet(Strings.repeat("a", 144));
+      tweetModal.enterTweet(Strings.repeat("a", 300));
       assertFalse("The tweet button should not be enabled", tweetModal.isTweetButtonEnabled());
   }
 }

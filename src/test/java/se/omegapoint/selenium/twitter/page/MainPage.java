@@ -15,7 +15,7 @@ public class MainPage {
 
     private final By tweetButton = By.id("global-new-tweet-button");
     private final By numberOfTweets = By.cssSelector(".DashboardProfileCard-content " +
-            ".ProfileCardStats .ProfileCardStats-statValue");
+            ".ProfileCardStats a[data-element-term=tweet_stats] .ProfileCardStats-statValue");
     private final By userDropdownMenu = By.id("user-dropdown-toggle");
     private final By logoutButton = By.cssSelector(".js-signout-button .dropdown-link");
 

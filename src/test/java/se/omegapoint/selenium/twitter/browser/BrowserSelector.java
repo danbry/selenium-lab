@@ -12,6 +12,7 @@ public class BrowserSelector {
 
         switch(configuredBrowser) {
             case "Chrome": return new Chrome();
+            case "Chrome-headless": return new ChromeHeadless();
             case "Firefox": return new Firefox();
             case "Safari": return new Safari();
             default: return new Chrome();
