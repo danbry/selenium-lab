@@ -29,7 +29,7 @@ The code and configuration is located in the src/test folder in package se.omega
    * BaseTest - A base class for the tests to extend
    * LoginTest - Will do a correct login and an incorrect one
    * ProfileTest - Will do a login and go the the profile page
-   * TwitterTest - Will send a correct Tweet and try to send a Tweet with 144 characters which will fail.
+   * TwitterTest - Will send a correct Tweet and try to send a Tweet with 300 characters which will fail.
  
 ### Test configuration
 To run the tests the configuration file config.properties must be updated. It's stored in src/test/resources
