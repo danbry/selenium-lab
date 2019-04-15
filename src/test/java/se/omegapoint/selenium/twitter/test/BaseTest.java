@@ -1,7 +1,7 @@
 package se.omegapoint.selenium.twitter.test;
 
-import org.junit.After;
-import org.junit.Before;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
 import se.omegapoint.selenium.twitter.browser.BrowserDriver;
@@ -35,16 +35,16 @@ public abstract class BaseTest {
         }
     }
 
-    @Before
-    public void setUp() throws Exception {
+    @BeforeEach
+    public void setUp() {
         driver = getBrowser().getDriverInstance();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.manage().window().fullscreen();
     }
 
 
-    @After
-    public void tearDown() throws Exception {
+    @AfterEach
+    public void tearDown() {
         driver.quit();
     }
 

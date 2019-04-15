@@ -1,12 +1,12 @@
 package se.omegapoint.selenium.twitter.test;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import se.omegapoint.selenium.twitter.page.LoginPage;
 import se.omegapoint.selenium.twitter.page.MainPage;
 import se.omegapoint.selenium.twitter.page.ProfilePage;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /**
  * Tests for the profile page
@@ -25,7 +25,7 @@ public class ProfileTest extends BaseTest {
 
         MainPage mainPage = new MainPage(driver);
         //Verify that we are on the main page
-        assertTrue("Not on main page", mainPage.isOnMainPage());
+        assertTrue(mainPage.isOnMainPage(), "Not on main page");
 
         //Get number of tweets
         int numberOfTweetsOnMainPage = mainPage.getCurrentNumberOfTweets();
@@ -36,6 +36,6 @@ public class ProfileTest extends BaseTest {
 
         int numberOfTweetsOnProfilePage = profilePage.getCurrentNumberOfTweets();
 
-        assertEquals("Expect number of tweets to be the same on main page and profile page", numberOfTweetsOnMainPage, numberOfTweetsOnProfilePage);
+        assertEquals(numberOfTweetsOnMainPage, numberOfTweetsOnProfilePage, "Expect number of tweets to be the same on main page and profile page");
     }
 }
