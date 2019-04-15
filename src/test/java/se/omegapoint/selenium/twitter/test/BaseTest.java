@@ -21,6 +21,7 @@ public abstract class BaseTest {
     }
 
     protected void refreshPage() {
+        //driver.navigate().to(driver.getCurrentUrl());
         driver.navigate().refresh();
         isAlertPresentThenAccept();
     }
@@ -38,7 +39,7 @@ public abstract class BaseTest {
     public void setUp() throws Exception {
         driver = getBrowser().getDriverInstance();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        driver.manage().window().maximize();
+        driver.manage().window().fullscreen();
     }
 
 

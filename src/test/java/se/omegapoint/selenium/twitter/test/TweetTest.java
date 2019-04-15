@@ -49,6 +49,8 @@ public class TweetTest extends BaseTest {
       tweetModal.enterTweet("Tweet created by Selenium test on " + new Date());
       tweetModal.clickTweetButton();
 
+      Thread.sleep(1000);
+
       //Refresh page to update number of tweets
       refreshPage();
 
